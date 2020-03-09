@@ -1,0 +1,105 @@
+/* #RESET
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* #BASE TYPOGRAPHY/STYLING
+================================================== */
+body {
+	  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* #CLEARFIX
+================================================== */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* #HEADER
+================================================== */
+
+
+header {
+    background: #007fca;
+    text-align: center;
+    padding: 1.5em 1em 1em 1em;
+}
+
+header #logo a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+#mainnav {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: .05em;
+}
+
+#mainnav #menu {
+    display: none;
+    padding: .8em 1.5em;
+    cursor: pointer;
+}
+
+
+#mainnav ul {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+#mainnav ul li {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+#mainnav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: .9em 1.5em .8em 1.5em;
+}
+
+#mainnav ul li a:hover {
+    color: #000;
+    background: #aaa;
+}
+
+.content {
+	  padding: 1.5em;
+}
+
+/* MOBILE */
+@media all and (max-width: 767px) {
+	
+    #mainnav #menu {
+        display: block;
+    }
+
+    #mainnav ul {
+        display: none;
+        background: #666;
+        padding: 1em;
+        text-align: left;
+    }
+    #mainnav ul li {
+        display: block;
+    }
+
+    #mainnav ul li a {
+        display: block;
+        padding: .75em 1.5em .5em 1.5em;
+    }
+
+}
